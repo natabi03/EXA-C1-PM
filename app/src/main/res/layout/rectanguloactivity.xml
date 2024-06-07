@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="40dp" />
+
+    <TextView
+        android:id="@+id/txtalt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Altura: "
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="96dp" />
+
+    <TextView
+        android:id="@+id/txtBs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Base: "
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="154dp" />
+
+    <TextView
+        android:id="@+id/txtQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Que deseas calcular? "
+        tools:layout_editor_absoluteX="137dp"
+        tools:layout_editor_absoluteY="227dp" />
+
+    <RadioGroup
+        android:layout_width="245dp"
+        android:layout_height="131dp"
+        tools:layout_editor_absoluteX="83dp"
+        tools:layout_editor_absoluteY="280dp">
+
+        <RadioButton
+            android:id="@+id/rdbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Área" />
+
+        <RadioButton
+            android:id="@+id/rdbpr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Perímetro" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtwta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="El área es: "
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="462dp" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="555dp" />
+
+    <Button
+        android:id="@+id/brnrgr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Regresar"
+        tools:layout_editor_absoluteX="168dp"
+        tools:layout_editor_absoluteY="650dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
