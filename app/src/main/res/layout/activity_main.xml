@@ -8,87 +8,84 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Calculos del Rectangulo"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Cálculos del Rectángulo"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/etNombre"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.051" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/etNombre"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="144dp"
+        android:layout_marginTop="36dp"
         android:layout_marginEnd="16dp"
         android:background="@android:drawable/edit_text"
         android:hint="Escribe aqui tu nombre: "
         android:inputType="textPersonName"
         android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
         android:id="@+id/etAltura"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:background="@android:drawable/edit_text"
         android:hint="Escribe aquí la altura del rectángulo: "
         android:inputType="numberDecimal"
         android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etBase" />
+        app:layout_constraintTop_toBottomOf="@+id/etNombre" />
 
     <EditText
         android:id="@+id/etBase"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:background="@android:drawable/edit_text"
         android:hint="Escribe la base del rectángulo: "
         android:inputType="numberDecimal"
         android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etNombre" />
-
-    <Button
-        android:id="@+id/btnsig"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Siguiente"
-        tools:layout_editor_absoluteX="151dp"
-        tools:layout_editor_absoluteY="515dp" />
+        app:layout_constraintTop_toBottomOf="@+id/etAltura" />
 
     <Button
         android:id="@+id/btnlim"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Limpiar"
-        tools:layout_editor_absoluteX="53dp"
-        tools:layout_editor_absoluteY="515dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etBase" />
+
+    <Button
+        android:id="@+id/btnsig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Siguiente"
+        app:layout_constraintStart_toEndOf="@+id/btnlim"
+        app:layout_constraintTop_toBottomOf="@+id/etBase" />
 
     <Button
         android:id="@+id/btnsalir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Salir"
-        tools:layout_editor_absoluteX="259dp"
-        tools:layout_editor_absoluteY="515dp" />
-
+        app:layout_constraintStart_toEndOf="@+id/btnsig"
+        app:layout_constraintTop_toBottomOf="@+id/etBase" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
