@@ -49,7 +49,7 @@
         app:layout_constraintTop_toBottomOf="@id/txtBase"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="32dp"
-        android:layout_marginLeft="137dp"
+        android:layout_marginLeft="110dp"
         android:textSize="18sp"/>
 
     <RadioGroup
@@ -97,7 +97,7 @@
         app:layout_constraintTop_toBottomOf="@id/txtResultado"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="40dp"
-        android:layout_marginStart="149dp"
+        android:layout_marginStart="120dp"
         android:onClick="calcular"/>
 
     <Button
@@ -112,6 +112,6 @@
         app:layout_constraintTop_toBottomOf="@id/btnCalcular"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="140dp"
-        android:layout_marginStart="149dp"/>
+        android:layout_marginStart="120dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
